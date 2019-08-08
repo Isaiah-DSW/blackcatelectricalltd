@@ -1,0 +1,214 @@
+@media screen and (max-width: 1150px) {
+/*start*/
+.widesection {
+	height: auto;
+	margin-bottom: calc(230px + 20vw);
+}
+
+.widesectionimgleft, .widesectionimgright {
+	float: none;
+	width: 100%;
+	max-width: 800px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: calc((100vw - 20px) * 0.6);
+	max-height: calc(740px * 0.6);
+}
+
+.widesectioninfoleft, .widesectioninforight {
+	float: none;
+	width: 100%;
+	max-width: 800px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	margin-bottom: 100px;
+}
+
+.widesection h3, .widesection h4, .widesection p, .widesection div  {
+	text-align: center;
+	margin: auto;
+}
+
+.widesection h3, .widesection h4 {
+	margin-top: 20px;
+}
+/*end*/
+}
+
+@media screen and (max-width: 1100px) {
+/*start*/
+#contactform, #contactform table {
+	margin: 0px;
+	position: static;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contactinfo {
+	text-align: center;
+	width: 100%;
+}
+/*end*/
+}
+
+@media screen and (max-width: 900px) {
+/*start*/
+body {
+	margin: 10px;
+}
+
+#navbar {
+	line-height: 30px;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	background-color: white;
+	height: 110px;
+  -webkit-user-select: none;
+  user-select: none;
+  moz-user-select: none;
+}
+
+#desktopnavbar {
+	display: none;
+}
+
+#topimage {
+	padding-top: 110px;
+}
+
+#logo {
+	position: relative;
+	display: block;
+	left: 0px;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 40%;
+	top: 0px;
+	max-width: 250px;
+	cursor: pointer;
+	padding-top: 10px;
+}
+
+#hamburger {
+	width: 50px;
+	height: 50px;
+	float: right;
+	bottom: 60px;
+	position: relative;
+	margin-right: 20px;
+	border: 2px solid transparent;
+	transition: 0.2s;
+	cursor: pointer;
+	z-index: 10;
+  -webkit-user-select: none;
+  user-select: none;
+  moz-user-select: none;
+}
+
+#hamburgerdisplay {
+	width: 50px;
+	height: 50px;
+	background-image: url('./style/images/hamburger.svg');
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 0.4s;
+  -webkit-user-select: none;
+  user-select: none;
+  moz-user-select: none;
+	
+}
+
+#hamburger:hover {
+	border: 2px solid red;
+	transition: 0.1s;
+}
+
+#navbardropdown {
+	display: block;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	height: 0px;
+	background-color: white;
+	z-index: 9;
+	transition: 0.6s;
+	transform: rotate(180deg);
+  -webkit-user-select: none;
+  user-select: none;
+  moz-user-select: none;
+}
+
+#navrotate {
+	transform: rotate(-180deg);
+	text-align: center;
+}
+
+#navrotate a {
+  display: inline-block;
+  padding: 15px;
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(50,50,50);
+  margin: 10px;
+  position: relative;
+  bottom: calc(20vh - 70px);
+}
+
+#navrotate a div {
+	height: 2px;
+	background-color: red;
+	position: relative;
+	bottom: 0px;
+	left: 5px;
+	width: 0px;
+	transition: 0.4s;
+	float: right;
+}
+
+#navrotate a:hover div {
+	width: calc(100% + 10px);
+	transition: 0.2s;
+}
+
+#navrotate a:hover {
+	color: black;
+}
+
+#navcontact {
+	opacity: 0;
+	pointer-events: none;
+}
+
+#topimage h1 {
+	font-size: 3em;
+}
+
+
+
+
+
+/*end*/
+}
+
+@media screen and (max-width: 600px) {
+/*start*/
+#topimage h1 {
+	font-size: 2em;
+}
+
+#footer div {
+	width: 70%;
+}
+/*end*/
+}
